@@ -16,8 +16,7 @@ int main(void)
 		{	
 			for (one = (ten + 1); one <= '9'; one++) /*ones*/
 			{
-                               
-				putchar(hundred);
+                               	putchar(hundred);
 				putchar(ten);
 				putchar(one); 
 				if (hundred != '7' || ten != '8' || one != '9')					{     
@@ -25,7 +24,8 @@ int main(void)
 					putchar(' ');
 				}
 			}
-		}		
+			}
+		}
 	}
 	putchar('\n');
 	return (0);

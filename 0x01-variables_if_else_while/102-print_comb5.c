@@ -21,11 +21,11 @@ int main(void)
 				{
 					putchar(tens);
 					putchar(ones);
-					putchar('');
+					putchar(' ');
 					putchar(t);
 					putchar(o);
 					if (!((tens == '9' && ones == '8') &&
-					(t == '9' && o == '99')))
+						(t == '9' && o == '9')))
 					{
 						putchar(',');
 						putchar(' ');
@@ -33,7 +33,7 @@ int main(void)
 				}
 				o = '0';
 			}
-		}
+		}	
 	}
 	putchar('\n');
 	return (0);

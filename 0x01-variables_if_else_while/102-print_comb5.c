@@ -1,35 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - print possible combination of two 2-dgit
- * numbers
+ * main - main - two pairs of numbers that do not repeat
  *
- * Return; returns zero at the end
+ * Return (0)
  */
+
 int main(void)
 {
-	int i, p;
+	int i, j;
 
-	for (i = 0; i < 100; i++)
+	for (j = 0; j <= 99; j++)
 	{
-		for (p = 0; p < 100; i++)
+		for (i = j; i <= 99; i++)
 		{
-			if (p > i)
+			if (i != j)
 			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
-				putchar(''');
-				putchar((p / 10) + '0');
-				putchar((p % 10) + '0');
-				if (i != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+				putchar(' ');
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
 			}
-			o = '0';
+			if (j * 100 + i != 9899)
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
+

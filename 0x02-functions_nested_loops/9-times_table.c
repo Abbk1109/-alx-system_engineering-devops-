@@ -14,6 +14,7 @@ void times_table(void)
 		for (nn = 0; nn <= 9; nn++)
 		{
 			mul = mm * nn;
+
 			if (nn == 0)
 				_putchar('0' + mul);
 			else if (mul < 10)

@@ -24,8 +24,7 @@ void print_number(int n)
  */
 void print(unsigned int d)
 {
-	if (d / 10)
-
+	if ((d / 10) > 0)
 		print(d / 10);
 	_putchar('0' + d % 10);
 }

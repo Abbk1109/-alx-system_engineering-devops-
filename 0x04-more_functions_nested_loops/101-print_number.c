@@ -17,13 +17,3 @@ void print_number(int n)
 	}
 	print(n);
 }
-
-/**print - subfunction to print recursively
- * @d: variable to be printed
- */
-void print(unsigned int d)
-{
-	if (d / 10)
-		print(d / 10);
-	_putchar('0' + d % 10);
-}

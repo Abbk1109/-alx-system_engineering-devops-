@@ -12,19 +12,38 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
-	if (a >= b && a >= c)
+	if(a >= b && a >= c)
 	{
-		largest = a;
+		if(b >= c)
+		{
+			printf("\n\n%.2lf is the 2nd largest number\n", b);
+		}
+		else
+		{
+			printf("\n\n%.2lf is the 2nd largest number\n", c);
+
+		}
 	}
-	else if (b >= a && b >= c)
+	else if(b >= a && b >= c)
 	{
-		largest = b;
+		if(a >= c)
+		{
+			printf("\n\n%.2lf is the 2nd largest number\n",a);
+		}
+		else
+		{
+			 printf("\n\n%.2lf is the 2nd largest number\n",c);
+		}
 	}
-	else if (c >= a && c >= b)
+	else if(a >= b)
 	{
-		largest = c;
+		printf("\n\n%.2lf is the 2nd largest number\n", a);
+		else
+		{
+			printf("\n\n%.2lf is the 2nd largest number\n", b);
 	}
 
-	return (largest);
+	 printf("\n\n\t\t\tCoding is Fun !\n\n\n");
+	return 0;
 }
 

@@ -25,5 +25,5 @@ void print(unsigned int d)
 {
 	if (d / 10)
 		print(d / 10);
-	_putchar('0'  + d % 10);
-}
+	_putchar('0' + d % 10);
+i}

@@ -19,12 +19,9 @@ void print_remaining_days(int month, int day, int year)
 			&& year % 4 == 0)
 	{
 		if (month >= 3 && day >= 60)
-		  {
-			day++;
-		  }
+			day++
 		printf("Day of the year: %d\n", day);
-		printf("Remaining days: %d\n", leapDaysTot - day);
-	}
+		printf("Remaining days: %d\n", leapDaysTot - day)
 	else
 	{
 		if (month == 2 && day == 60)

@@ -3,7 +3,7 @@
 /**
  * rot13 - encodes a string using rot13
  * @s: input string.
- * @s: input string.
+ * Return: the pointer to dest.
  */
 
 char *rot13(char *s)
@@ -18,7 +18,7 @@ for (i = 0; i < 52; i++)
 {
 if (*(s + count) == alphabet[i])
 {
-(*(s + count) = rot13[i];
+*(s + count) = rot13[i];
 break;
 }
 }

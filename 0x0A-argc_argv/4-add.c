@@ -2,29 +2,35 @@
 #include <stdlib.h>
 
 /**
- * main - adds all positive numbers and prints it
+ * main - adds positive numbers
  * @argc: argument count
- * @argv: argument vector
- * Return: 0 for success
+ * @argv: arguments
+ *
+ * Return: Always 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, res;
+	int i, n, sum = 0;
+	char *flag;
 
-	res = 0;
-
-	for (i = 0; i < argc; i++)
+	if (argc < 2)
 	{
-		if (i > 0)
-		{
-			if (atoi(argv[i]) == 0)
-			{
-				return (printf("Error\n"), 1);
-			}
-			res += atoi(argv[i]);
-		}
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", res);
+
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+			sum += n;
+	}
+	printf("%d\n", sum);
+
 	return (0);
 }

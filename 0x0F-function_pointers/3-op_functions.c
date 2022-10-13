@@ -67,5 +67,5 @@ if (!b)
 printf("Error\n");
 exit(100);
 }
-  return (a % b);
+return (a % b);
 }

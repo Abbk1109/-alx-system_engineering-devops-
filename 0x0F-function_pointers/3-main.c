@@ -7,6 +7,7 @@
  *
  * Return: 0 if succesfful
  */
+
 int main(int argc, char **argv)
 {
 	int (*f)(int a, int b);

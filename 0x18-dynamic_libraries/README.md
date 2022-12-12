@@ -1,1 +1,1 @@
-Creating and Using Dynamic LIbraries (Linux)
+# C - Dynamic libraries
